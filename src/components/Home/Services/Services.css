@@ -1,0 +1,10 @@
+.service-heading{
+    margin-top: 150px;
+    margin-bottom:100px;
+}
+.service-heading > h4{
+    color: #1CC7C1;
+}
+.service-heading{
+    color: #3A4256;
+}

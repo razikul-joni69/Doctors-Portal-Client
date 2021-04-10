@@ -1,0 +1,16 @@
+.infoCard-container{
+    position: absolute;
+    top: -50px;
+}
+.infoCard-container-inner{
+    height:100px;
+}
+.bg-double{
+    background-color: #1CC7C1 ;
+}
+.bg-single{
+    background-color: #3A4256;
+}
+.icon{
+    font-size: 30px;
+}
