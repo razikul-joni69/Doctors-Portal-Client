@@ -1,6 +1,10 @@
 import React from "react";
+import Calendar from "react-calendar";
 import Chair from "../../../images/chair.png";
-const Main = () => {
+import 'react-calendar/dist/Calendar.css';
+
+const AppointmentHeader = ({handleDateChange}) => {
+    
     return (
         <div className="container">
             <main
@@ -8,17 +12,8 @@ const Main = () => {
                 className="row align-items-center"
             >
                 <div className="col-md-5 align-items-start">
-                    <h1 style={{ color: "#3A4256" }}>
-                        Your new smile <br /> starts here
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Autem in voluptatem recusandae tenetur ratione? Maxime
-                        inventore iusto eos.
-                    </p>
-                    <button  className="btn-brand">
-                        GET APPOINTMENT
-                    </button>
+                    <h1 style={{ color: "#3A4256" }}>Appointment</h1>
+                    <Calendar onChange={handleDateChange} value={new Date()} />
                 </div>
                 <div className="col-md-1"></div>
                 <div className="col-md-6">
@@ -29,4 +24,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default AppointmentHeader;
